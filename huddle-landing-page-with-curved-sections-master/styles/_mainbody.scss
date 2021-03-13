@@ -1,0 +1,46 @@
+.container {
+  @include flexcenter(row);
+  max-width: 100%;
+
+  img {
+    width: 35%;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    font-size: 3.8rem;
+  }
+}
+
+.container--reverse {
+  @include flexcenter(row-reverse);
+}
+
+.container--bg-blue {
+  background-color: hsl(207, 100%, 98%);
+  width: 100%;
+}
+.bg-top {
+  background-position: bottom;
+  margin-top: 16rem;
+}
+.bg-bottom {
+  background-position: top;
+}
+.bg-section {
+  height: 180px;
+  background-size: cover;
+}
+.bg-top-1 {
+  background-image: url("../images/bg-section-top-desktop-1.svg");
+}
+
+.bg-bottom-1 {
+  background-image: url("../images/bg-section-bottom-desktop-1.svg");
+}
+
+.bg-top-2 {
+  background-image: url("../images/bg-section-top-desktop-2.svg");
+}
+.bg-bottom-2 {
+  background-image: url("../images/bg-section-bottom-desktop-2.svg");
+}

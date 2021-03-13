@@ -1,0 +1,99 @@
+.bg-footer {
+  content: url("../images/bg-footer-top-desktop.svg");
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  bottom: 400px;
+  z-index: 1;
+  left: 0px;
+}
+
+.footer {
+  background: $footerbg;
+  position: relative;
+  max-width: 100%;
+  min-height: 10%;
+
+  p,
+  h3 {
+    color: $secondarytext;
+  }
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 4rem;
+  padding-top: 5rem;
+
+  .card-1__body {
+    padding-top: 2rem;
+  }
+
+  .contact p {
+    display: inline;
+    margin-left: 2rem;
+  }
+  .contact {
+    margin-top: 2rem;
+  }
+  .phone {
+    padding-bottom: 2rem;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6rem;
+  }
+  li + li {
+    margin-left: 2rem;
+  }
+  .card-2__title {
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .card-2__body {
+    padding-bottom: 2rem;
+  }
+
+  form {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input {
+    border-style: none;
+    padding: 1rem 6rem;
+    border-radius: 0.5rem;
+  }
+
+  input::placeholder {
+    opacity: 0.5;
+    font-style: italic;
+  }
+  button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #e0008e;
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 3px 8px;
+    margin-left: 2rem;
+    cursor: pointer;
+    &:hover {
+      background: hsl(180, 78%, 48%);
+    }
+  }
+  .list img:hover {
+    transform: translateY(5%);
+    background-color: hsl(180, 78%, 48%);
+    border-radius: 2rem;
+  }
+}

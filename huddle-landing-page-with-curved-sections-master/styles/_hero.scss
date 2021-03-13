@@ -1,0 +1,49 @@
+.hero {
+  @include flexcenter(column);
+  position: relative;
+  margin-top: 15rem;
+  &__title {
+    font-family: $font-headings;
+    font-size: 3.4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  &__body {
+    text-align: center;
+    padding-bottom: 3rem;
+    max-width: 90%;
+  }
+  .btn {
+    @include btn();
+  }
+  &__img {
+    margin-top: 12rem;
+    width: 75%;
+  }
+  .data {
+    @include flexcenter(row);
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+
+    &__communities {
+      position: relative;
+      right: 40%;
+    }
+    &__message {
+      position: relative;
+      left: 40%;
+    }
+    .data__communities__clicks {
+      font-size: 8rem;
+    }
+    .data__communities__body {
+      color: #5c636e;
+    }
+    .data__message__clicks {
+      font-size: 8rem;
+    }
+    .data__message__body {
+      color: #5c636e;
+    }
+  }
+}

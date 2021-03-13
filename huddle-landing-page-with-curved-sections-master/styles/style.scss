@@ -1,0 +1,36 @@
+@import "./variable";
+@import "./header";
+@import "./hero";
+@import "./mainbody";
+@import "./membership";
+@import "./footer";
+@import "./media_query";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  color: $primarytext;
+}
+
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  color: $secondarytext;
+  text-decoration: none;
+}

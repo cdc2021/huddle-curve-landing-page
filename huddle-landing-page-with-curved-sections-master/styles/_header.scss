@@ -1,0 +1,31 @@
+.header {
+  height: 10%;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+  @include flexcenter(row);
+
+  &__logo {
+    position: relative;
+    right: 10%;
+    width: 20%;
+  }
+  .btn {
+    font-size: 1.6rem;
+    position: relative;
+    left: 10%;
+    padding: 0.7rem 2rem;
+    border-radius: 3rem;
+    border-style: none;
+    border: 0.15rem solid $primarybtn;
+    background-color: white;
+    color: $primarybtn;
+    cursor: pointer;
+    &:hover {
+      background-color: hsl(180, 78%, 48%);
+      border: hsl(180, 78%, 48%);
+      color: $secondarytext;
+    }
+  }
+}

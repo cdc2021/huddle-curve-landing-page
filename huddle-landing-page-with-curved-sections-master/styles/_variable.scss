@@ -1,0 +1,39 @@
+$primarybtn: #e0008e;
+$secondarybtn: hsl(321, 100%, 78%);
+$primarytext: hsl(192, 100%, 9%);
+$secondarytext: hsl(207, 100%, 98%);
+
+$footerbg: hsl(192, 100%, 9%);
+
+$font-headings: "Poppins", sans-serif;
+$font-main: "Open Sans", sans-serif;
+
+@mixin flexcenter($direction) {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+}
+
+@mixin btn() {
+  cursor: pointer;
+  padding: 2rem 8rem;
+  margin-bottom: 2rem;
+  border-radius: 3rem;
+  border-style: none;
+  background: linear-gradient(to left, $primarybtn, $secondarybtn);
+  background: $primarybtn;
+  box-shadow: rgba(0, 0, 0, 0.253) 0px 3px 8px;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  &:hover {
+    background: hsl(180, 78%, 48%);
+  }
+}
+
+@mixin background($bg) {
+  background-image: $bg;
+}

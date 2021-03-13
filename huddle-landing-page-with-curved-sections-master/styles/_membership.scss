@@ -1,0 +1,14 @@
+.signup {
+  @include flexcenter(column);
+  margin-top: 12rem;
+  padding-bottom: 32rem;
+
+  .signup__title {
+    font-size: 3.8rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  button {
+    @include btn();
+  }
+}
